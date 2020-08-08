@@ -1,12 +1,12 @@
 package com.recycler.coverflow.viewpager;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.core.app.Fragment;
+import androidx.core.app.FragmentManager;
+import androidx.core.app.FragmentPagerAdapter;
+import androidx.core.view.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.recycler.coverflow.R;
 
