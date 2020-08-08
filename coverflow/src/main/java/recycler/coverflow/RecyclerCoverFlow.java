@@ -1,10 +1,11 @@
 package recycler.coverflow;
 
 import android.content.Context;
-import androidx.annotation.Nullable;
-import androidx.appcompat.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * 继承RecyclerView重写{@link #getChildDrawingOrder(int, int)}对Item的绘制顺序进行控制
