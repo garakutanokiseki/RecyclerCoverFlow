@@ -1,15 +1,17 @@
 # RecyclerCoverFlow
-使用RecyclerView，自定义LayoutManager实现旋转木马相册效果
+RecyclerViewを使用してレイアウトマネージャーがカルーセル効果を実現します。
 
 ![image](https://github.com/ChenLittlePing/RecyclerCoverFlow/blob/master/gif/demo.gif)
 
-## Gradle依赖
-请查看最新版本：[Release](https://github.com/ChenLittlePing/RecyclerCoverFlow/releases)
+## Gradleの依存関係
+最新バージョンを確認してください：[Release](https://github.com/ChenLittlePing/RecyclerCoverFlow/releases)
 
-如：`compile 'com.chenlittleping:recyclercoverflow:1.0.6'`
+```
+compile 'com.chenlittleping:recyclercoverflow:1.0.6'
+```
 
-## 使用方式
-### 1,xml中加入
+## 使い方
+### 1,xmlに追加
 ```xml
     <recycler.coverflow.RecyclerCoverFlow
             android:id="@+id/list"
@@ -17,10 +19,10 @@
             android:layout_height="match_parent">
     </recycler.coverflow.RecyclerCoverFlow>
 ```
-### 2，Activity中初始化，其中Adapter与RecyclerView的Adapter完全一致
+### 2，Activityを初期化します。アダプターはRecyclerViewのアダプターとまったく同じです。
 ```java
     mList = (RecyclerCoverFlow) findViewById(R.id.list);
-    //        mList.setFlatFlow(true); //平面滚动
+    //        mList.setFlatFlow(true); //平面ローリング
     mList.setAdapter(new Adapter(this));
     mList.setOnItemSelectedListener(new CoverFlowLayoutManger.OnSelected() {
         @Override
@@ -30,6 +32,6 @@
     });
 ```
 
-## 实现原理：
+## 実現方法は以下を参照してください。：
 
 https://www.jianshu.com/p/1837a801e599
